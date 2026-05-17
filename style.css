@@ -1,0 +1,574 @@
+/* ===== General Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffeef7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.page-wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffb6c1;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+.navbar .logo {
+    font-family: 'Baloo 2', cursive;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    animation: pulse 2s infinite;
+    letter-spacing: 1px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    margin-left: 25px;
+    color: white;
+    font-weight: 600;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: #fff0f5;
+    transform: scale(1.1);
+}
+
+/* ===== SECTIONS ===== */
+section {
+    padding: 80px 50px;
+    text-align: center;
+    background-color: #fff0f5;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+section.active {
+    opacity: 1;
+    transform: scale(1);
+    animation: popFade 0.5s ease forwards;
+}
+
+/* ===== HOME SECTION ===== */
+.home-container h1 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 3rem;
+    color: #ffffff;
+    animation: bounce 2s infinite;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.home-container {
+    background-color: #ffb6c1;
+    padding: 30px;
+    border-radius: 105px;
+    max-width: 800px;
+    margin: 40px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    margin-bottom: 100px;
+}
+
+.home-container:hover {
+    transform: scale(1.03);
+}
+
+.home-container p {
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+/* ===== IMAGE SLIDER ===== */
+.slider-container {
+    width: 90%;
+    max-width: 800px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(219, 39, 119, 0.2);
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-slide {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.slider-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(228, 101, 158, 0.8);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background 0.3s;
+}
+
+.slider-btn:hover {
+    background: #de4187;
+}
+
+.prev-btn { left: 20px; }
+.next-btn { right: 20px; }
+
+.slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.slider-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.slider-dot.active {
+    background: #db2777;
+}
+
+/* ===== ABOUT ME SECTION ===== */
+.aboutme-section {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 25px;
+    background-color: #f9d2dc;
+    transition: transform 0.3s ease;
+    position: relative;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #000000;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.aboutme-section h1{
+    color: #610318;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+}
+
+.aboutme-section:hover {
+    transform: scale(1.03);
+}
+
+.aboutme-section img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin-bottom: 0;
+    border-radius: 25px;
+    width: 150px;
+    height: auto;
+}
+
+.section-title {
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+/* ===== PETS & HOBBIES GRID ===== */
+.whole-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.whole-design {
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* ===== UNIFORM IMAGE SIZES ===== */
+.whole-design img {
+    width: 200px;
+    height: 150px;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.whole-design:hover img {
+    transform: scale(1.05);
+}
+
+.whole-design:hover {
+    transform: translateY(-5px);
+}
+
+.whole-design h4 {
+    margin-top: 10px;
+    color: #ff69b4;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #ffb6c1;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 150px;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes popFade {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ===== RESPONSIVE (PHONE FRIENDLY) ===== */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .navbar nav a {
+        margin: 8px 0;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    /* Adjust grid for small screens */
+    .whole-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    /* Scale images for small screens */
+    .whole-design img {
+        width: 100%;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-container h1 {
+        font-size: 2rem;
+    }
+    .home-container p {
+        font-size: 1.3rem;
+    }
+
+    .whole-design img {
+        height: 120px;
+    }
+}
+
+/* ===== PET DETAILS SECTION ===== */
+
+.pets-details-section{
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+
+/* ===== IMAGE SECTION ===== */
+
+.cat-image{
+    flex: 1;
+}
+
+.cats{
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 10px solid #ffb6c1;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
+/* ===== INFO SECTION ===== */
+
+.cat-info{
+    flex: 2;
+    position: relative;
+}
+
+
+/* ===== BACK BUTTON ===== */
+
+.goBackButton{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #610318;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.goBackButton:hover{
+    background-color: #9a0626;
+    transform: scale(1.05);
+}
+
+
+/* ===== PET NAME ===== */
+
+.cat-name{
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+
+/* ===== PET DETAILS ===== */
+
+.cat-details{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.cat-details li{
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #000000;
+    background-color: #f4f4f4;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+
+/* ===== DESCRIPTION ===== */
+
+.cat-description{
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 6px solid #610318;
+}
+
+.cat-description h3{
+    font-size: 26px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.cat-description p{
+    font-size: 20px;
+    line-height: 1.7;
+    color: #000000;
+}
+
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 768px){
+
+    .pets-details-section{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .goBackButton{
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .cats{
+        max-width: 100%;
+    }
+}
+
+
+/* ===== MAIN SECTION CARD ===== */
+
+.center-section{
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    position: relative;
+    text-align: center;
+}
+
+
+/* ===== BACK BUTTON ===== */
+
+.goBackButton2{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #610318;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.goBackButton2:hover{
+    background-color: #9a0626;
+    transform: scale(1.05);
+}
+
+
+/* ===== IMAGE ===== */
+
+.center-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.center-photo{
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 12px solid #ffb6c1;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+
+/* ===== TITLE ===== */
+
+.center-description h2{
+    font-size: 34px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+
+/* ===== DESCRIPTION BOX ===== */
+
+.center-description{
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 6px solid #610318;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-description p{
+    font-size: 20px;
+    line-height: 1.8;
+    margin-top: 10px;
+    color: #000;
+}
+
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px){
+
+    .center-section{
+        padding: 20px;
+    }
+
+    .center-photo{
+        width: 180px;
+        height: 180px;
+    }
+
+    .center-description{
+        width: 100%;
+    }
+
+    .goBackButton2{
+        position: static;
+        margin-bottom: 15px;
+    }
+}

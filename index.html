@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Me Myself and I</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+    <div class="logo">The Cozy Archive</div>
+        <nav>
+            <a href="#home-section" id="home-link">Home</a>
+            <a href="#aboutme-section" id="aboutme-link">About Me</a>
+            <a href="#mypets-section" id="mypets-link">My Pets</a>
+            <a href="#hobbies-section" id="hobbies-link">Hobbies</a>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="home-section">
+        <div class="home-container">
+            <h1>Welcome To My Website!</h1>
+            <p>This website serves as space where I share things about myself, my hobbies, interest, and the things I enjoy. Thank for stopping by, and I hope you enjoy exploring my page.</p>
+        </div>
+
+    <!-- IMAGE SLIDER -->
+    <div class="slider-container">
+        <div class="slider-wrapper" id="sliderWrapper">
+            <div class="slider-slide">
+                <img src="Slider Photo/Pic 1.jpg" alt="Pets">
+            </div>
+            <div class="slider-slide">
+                <img src="Slider Photo/Pic 2.jpg" alt="Pets">
+            </div>
+            <div class="slider-slide">
+                <img src="Slider Photo/Pic 3.jpg" alt="Pets">
+            </div>
+            <div class="slider-slide">
+                <img src="Slider Photo/Pic 4.jpg" alt="Pets">
+            </div>
+        </div>
+
+        <button class="slider-btn prev-btn" onclick="moveSlide(-1)">❮</button>
+        <button class="slider-btn next-btn" onclick="moveSlide(1)">❯</button>
+
+        <div class="slider-dots" id="sliderDots"></div>
+    </div>
+    </section>
+
+    <!--ABOUT ME SECTION-->
+    <section id="aboutme-section">
+        <div class="aboutme-section">
+            <h1>Personal Info</h1>
+            <img src="About Me Photo/MyPic.jpg" alt="Your Photo">
+        <br>
+            <p><span class="section-title">Name:</span> Ma. Clarize O. Macunat</p>
+            <p><span class="section-title">Age:</span> 20</p>
+            <p><span class="section-title">Birthday:</span> December 6, 2005</p>
+            <p><span class="section-title">Gender:</span> Female</p>
+            <p><span class="section-title">Blood Type:</span> B+</p>
+        <br>
+            <p class="section-title">Parents</p>
+            <p>Nimfa Oliva</p>
+            <p>Jayson Macunat</p>
+        <br>
+            <p class="section-title">Siblings</p>
+            <p>Andre Christian Samson <br> Lorenze Macunat <br> Jash Gabriel Macunat</p>
+        <br>
+            <p><span class="section-title">School:</span> World Citi Colleges, Quezon City</p>
+            <p><span class="section-title">Course:</span> Bachelor of Science in Nursing</p>
+            <p><span class="section-title">Motto:</span> "Not everything deserves a reaction"</p>
+        </div>
+    </section>
+
+    <!-- MY PETS SECTION -->
+    <section id="mypets-section" class="mypets-section">
+        <div class="whole-grid">
+            <div class="whole-design" id="kitty-link">
+                <img src="Pets Photo/Kitty.jpg" alt="Kitty" />
+                <h4>Kitty</h4>
+            </div>
+            <div class="whole-design" id="choco-link">
+                <img src="Pets Photo/Choco.jpg" alt="Choco" />
+                <h4>Choco</h4>
+            </div>
+            <div class="whole-design" id="leo-link">
+                <img src="Pets Photo/Leo.jpg" alt="Leo" />
+                <h4>Leo</h4>
+            </div>
+            <div class="whole-design" id="loki-link">
+                <img src="Pets Photo/Loki.jpg" alt="Loki" />
+                <h4>Loki</h4>
+            </div>
+            <div class="whole-design" id="max-link">
+                <img src="Pets Photo/Max.jpg" alt="Max" />
+                <h4>Max</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- MY PETS -->
+    <section class="pets-details-section" id="kitty-section">
+        <div class="cat-image">
+            <img src="Pets Photo/Kitty.jpg" alt="Kitty" class="cats"/>
+        </div>
+        <div class="cat-info">
+            <button id="CatButton1" class="goBackButton">↩</button>
+            <h2 class="cat-name">Kitty</h2>
+            <ul class="cat-details">
+                <li><strong>Breed:</strong> Puspin</li>
+                <li><strong>Color:</strong> Black + White</li>
+                <li><strong>Gender:</strong> Female</li>
+            </ul>
+            <div class="cat-description">
+                <h3>Description</h3>
+                <p>She becomes clingy whenever she’s hungry, lovingly takes care of her kittens like a responsible mother, and absolutely loves to eat.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pets-details-section" id="choco-section">
+        <div class="cat-image">
+            <img src="Pets Photo/Choco.jpg" alt="Choco" class="cats"/>
+        </div>
+        <div class="cat-info">
+            <button id="CatButton1" class="goBackButton">↩</button>
+            <h2 class="cat-name">Choco</h2>
+            <ul class="cat-details">
+                <li><strong>Breed:</strong> Siamese + Puspin</li>
+                <li><strong>Color:</strong> Brown</li>
+                <li><strong>Gender:</strong> Male</li>
+            </ul>
+            <div class="cat-description">
+                <h3>Description</h3>
+                <p>He is an observer, introverted but playful, is cute in everything he do, he loves to sleep, and he become the favorite cat of our family .</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pets-details-section" id="leo-section">
+        <div class="cat-image">
+            <img src="Pets Photo/Leo.jpg" alt="Leo" class="cats"/>
+        </div>
+        <div class="cat-info">
+            <button id="CatButton1" class="goBackButton">↩</button>
+            <h2 class="cat-name">Leo</h2>
+            <ul class="cat-details">
+                <li><strong>Breed:</strong> Puspin</li>
+                <li><strong>Color:</strong> White + Gray</li>
+                <li><strong>Gender:</strong> Male</li>
+            </ul>
+            <div class="cat-description">
+                <h3>Description</h3>
+                <p>He loves boxes, has a hyper and playful personality, he runs around the house and always looks photogenic in every photo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pets-details-section" id="loki-section">
+        <div class="cat-image">
+            <img src="Pets Photo/Loki.jpg" alt="Loki" class="cats"/>
+        </div>
+        <div class="cat-info">
+            <button id="CatButton1" class="goBackButton">↩</button>
+            <h2 class="cat-name">Loki</h2>
+            <ul class="cat-details">
+                <li><strong>Breed:</strong> Puspin</li>
+                <li><strong>Color:</strong> Gray</li>
+                <li><strong>Gender:</strong> Male</li>
+            </ul>
+            <div class="cat-description">
+                <h3>Description</h3>
+                <p>He is the clingiest cat, has a hyper and friendly personality, loves to play all the time, never gets tired, and enjoys hunting with Max.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pets-details-section" id="max-section">
+        <div class="cat-image">
+            <img src="Pets Photo/Max.jpg" alt="Max" class="cats"/>
+        </div>
+        <div class="cat-info">
+            <button id="CatButton1" class="goBackButton">↩</button>
+            <h2 class="cat-name">Max</h2>
+            <ul class="cat-details">
+                <li><strong>Breed:</strong> Puspin</li>
+                <li><strong>Color:</strong> Black + White</li>
+                <li><strong>Gender:</strong> Male</li>
+            </ul>
+            <div class="cat-description">
+                <h3>Description</h3>
+                <p>He is the sweetest cat who loves cuddles, has a kind and gentle personality, always plays with Loki, and hunts cockroaches at night.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOBBIES SECTION -->
+    <section id="hobbies-section" class="hobbies-section">
+        <div class="whole-grid">
+            <div class="whole-design" id="hobby1-link">
+                <img src="Hobbies Photo/Exploring different cuisines.jpg" alt="Hobby 1" />
+                <h4>Exploring different cuisines</h4>
+            </div>
+            <div class="whole-design" id="hobby2-link">
+                <img src="Hobbies Photo/Enjoy discovering new places.jpg" alt="Hobby 2" />
+                <h4>Enjoy discovering new places</h4>
+            </div>
+            <div class="whole-design" id="hobby3-link">
+                <img src="Hobbies Photo/Spending time with cats.jpg" alt="Hobby 3" />
+                <h4>Spending time with cats</h4>
+            </div>
+            <div class="whole-design" id="hobby4-link">
+                <img src="Hobbies Photo/Playing online games.jpg" alt="Hobby 4" />
+                <h4>Playing online games</h4>
+            </div>
+            <div class="whole-design" id="hobby5-link">
+                <img src="Hobbies Photo/Watching movies and series.jpg" alt="Hobby 5" />
+                <h4>Watching movies and series</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOBBIES -->
+    <section class="center-section" id="hobby1-section">
+
+        <button class="goBackButton2">↩</button>
+
+        <div class="center-image">
+            <img src="Hobbies Photo/Exploring different cuisines.jpg" alt="Hobby Image" class="center-photo">
+        </div>
+        <div class="center-description">
+            <h2>Exploring different cuisines</h2>
+            <p>I love to explore different cuisines. I enjoy trying new flavors and dishes from different cultures, as it allows me to discover unique tastes and broaden my appreciation for food.</p>
+        </div>
+    </section>
+
+    <section class="center-section" id="hobby2-section">
+
+        <button class="goBackButton2">↩</button>
+
+        <div class="center-image">
+            <img src="Hobbies Photo/Enjoy discovering new places.jpg" alt="Hobby Image" class="center-photo">
+        </div>
+        <div class="center-description">
+            <h2>Enjoy discovering new places</h2>
+            <p>I appreciate every place I get to visit. Each destination offers a unique experience, culture, and perspective, and I want to continue discovering more places around the world.</p>
+        </div>
+    </section>
+
+    <section class="center-section" id="hobby3-section">
+
+        <button class="goBackButton2">↩</button>
+
+        <div class="center-image">
+            <img src="Hobbies Photo/Spending time with cats.jpg" alt="Hobby Image" class="center-photo">
+        </div>
+        <div class="center-description">
+            <h2>Spending time with cats</h2>
+            <p>I love spending time with my cats. They have become my stress relievers whenever I feel tired or overwhelmed, as their presence brings me comfort and helps me relax.</p>
+        </div>
+    </section>
+
+    <section class="center-section" id="hobby4-section">
+
+        <button class="goBackButton2">↩</button>
+
+        <div class="center-image">
+            <img src="Hobbies Photo/Playing online games.jpg" alt="Hobby Image" class="center-photo">
+        </div>
+        <div class="center-description">
+            <h2>Playing online games</h2>
+            <p>I enjoy playing online games. It helps me relax after a long day and keeps me entertained. It also allows me to improve my thinking skills, strategy, and teamwork while having fun.</p>
+        </div>
+    </section>
+
+    <section class="center-section" id="hobby5-section">
+
+        <button class="goBackButton2">↩</button>
+
+        <div class="center-image">
+            <img src="Hobbies Photo/Watching movies and series.jpg" alt="Hobby Image" class="center-photo">
+        </div>
+        <div class="center-description">
+            <h2>Watching movies and series</h2>
+            <p>I enjoy watching series and movies. It is one of my favorite ways to relax and spend my free time. I like how stories from different genres keep me entertained and sometimes inspire or teach me life lessons.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 The Cozy Archive. All rights reserved.</p>
+    </footer>
+
+    <script src="function.js"></script>
+
+</body>
+</html>
